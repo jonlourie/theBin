@@ -4,7 +4,7 @@ import { Card, Illustration } from "@web3uikit/core";
 import style from "@/styles/Home.module.css";
 
 //import the contract which you still have to build this is the "contracts folder" in the root directory in index.js
-import { abi, NFTMarketplace_CONTRACT_ADDRESS } from "../contracts/index.js";
+//import { abi, NFTMarketplace_CONTRACT_ADDRESS } from "../contracts/index.js";
 
 
 export default function CardComp(props) { 
@@ -21,29 +21,29 @@ export default function CardComp(props) {
         }
     });
 
-    const NftMarketplace = useContract({
-        address: NFTMarketplace_CONTRACT_ADDRESS,
-        abi: abi,
-        signerOrProvider: signer || provider,
-    });
+    //const NftMarketplace = useContract({
+        //address: NFTMarketplace_CONTRACT_ADDRESS,
+        //abi: abi,
+        //signerOrProvider: signer || provider,
+    //});
 
     const handleChange = (e) => {
         setNftPrice(Number(e.target.value));
     };
 
     const handleSubmit = async () => {
-        try {
-            const tx = await NftMarketplace.createMarketItem(
-                NFTMarketplace_CONTRACT_ADDRESS,
-                props.uri.token_uri,
-                nftPrice,
-            );
-            await tx.wait();
-            console.log("Success");
-            alert("Success");
-        } catch (error) {
-            console.log(error);
-        }
+        //try {
+            //const tx = await NftMarketplace.createMarketItem(
+                //NFTMarketplace_CONTRACT_ADDRESS,
+                //props.uri.token_uri,
+                //nftPrice,
+            //);
+            //await tx.wait();
+            //console.log("Success");
+            //alert("Success");
+        //} catch (error) {
+            //console.log(error);
+        //}
     };
 
     return (
