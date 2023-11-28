@@ -6,15 +6,10 @@ import { Arrow, Eth } from "@web3uikit/icons";
 import styles from "@/styles/Home.module.css";
 
 import BAYC from "../public/assets/blurBackground.png";
-import BAYCProfile from "../public/assets/bayc_profile.webp";
 import ChecksVVOriginals from "../public/assets/checksVVOriginals.png";
-import ChecksVVOriginalsProfile from "../public/assets/checksbboriginals_profile.webp";
 import Azuki from "../public/assets/azuki.png";
-import AzukiProfile from "../public/assets/azuki_profile.webp";
 import PudgyPenguins from "../public/assets/pudgyPenguins.png";
-import PudgyPenguinsProfile from "../public/assets/pudgyPenguins_profile.webp";
 import Moonbirds from "../public/assets/moonbirds.png";
-import MoonbirdsProfile from "../public/assets/moonbirds_profile.webp";
 
 export function HeroSection() {
     //const [oneDayTradingVolume, setOneDayTradingVolume] = useState("");

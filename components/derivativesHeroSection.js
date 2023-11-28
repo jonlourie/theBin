@@ -2,7 +2,7 @@ import Image from "next/image";
 import { Eth } from "@web3uikit/icons";
 import styles from "@/styles/Home.module.css";
 
-import AzukiProfile from "../public/assets/azuki_profile.webp";
+import Azuki from "../public/assets/azuki.png";
 
 //Again For this section we need to implement some new Moralis code 
 export default function DerivativesHeroSection() {
@@ -11,7 +11,7 @@ export default function DerivativesHeroSection() {
         <section className={styles.CollectionHeroSection}>
           <section>
             <Image
-              src={AzukiProfile}
+              src={Azuki}
               alt="azuki profile"
               className={styles.collectionProfile}
             />
